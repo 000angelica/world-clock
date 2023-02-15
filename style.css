@@ -7,7 +7,6 @@ body {
   background: white;
   padding: 30px;
   box-shadow: 1px 7px 8px 5px rgba(56, 56, 72, 0.2);
-
   border-radius: 10px;
 }
 h1 {
@@ -23,8 +22,10 @@ h2 {
 select {
   display: block;
   width: 100%;
+  font-size: 18px;
   border-radius: 4px;
   padding: 10px;
+
   font-size: 16px;
 }
 .city {
@@ -37,10 +38,10 @@ select {
 .city:last-child {
   border: none;
 }
-.date{
-    font-family: verdana;
-    font-size: 15px;
-    font-weight: 500;
+.date {
+  font-family: verdana;
+  font-size: 15px;
+  font-weight: 500;
 }
 .time {
   font-size: 34px;
@@ -52,7 +53,7 @@ select {
   vertical-align: middle;
   line-height: 36px;
 }
-select {x
+select {
   display: block;
   width: 100%;
   border-radius: 4px;
