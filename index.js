@@ -1,4 +1,15 @@
 function updateTime() {
+  // LA
+  let laElement = document.querySelector("#los-angeles");
+  if (laElement) {
+    let laDateElement = laElement.querySelector(".date");
+    let laTimeElement = laElement.querySelector(".time");
+    let laTime = moment().tz("America/Los_Angeles");
+
+    laDateElement.innerHTML = laTime.format("MMMM Do, YYYY");
+    laTimeElement.innerHTML = laTime.format("h:mm:ss [<small>]A[</small]");
+  }
+
   // NYC
   let nycElement = document.querySelector("#nyc");
   if (nycElement) {
@@ -22,6 +33,7 @@ function updateTime() {
     );
   }
 }
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
@@ -42,6 +54,7 @@ function updateCity(event) {
                 <a id= link href="">back to all cities</a>
              `;
 }
+
 updateTime();
 setInterval(updateTime, 1000);
 
